@@ -1,0 +1,260 @@
+/*Inicio Var*/
+$colorbase:#33425F;
+$colorletras:whitesmoke;
+$colorhover:grey;
+
+
+@import "footer";
+@import "whatsapp";
+@import "navegacion";
+@import "grid";
+@import "form";
+
+
+@mixin estructuramainindex ($width,$margin,$padding){
+    width:$width;
+    margin:$margin;
+    padding:$padding;    
+}
+
+
+
+
+
+* { 
+    margin:0;
+    padding:0; 
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color:whitesmoke;
+        &:hover {
+            color: $colorhover;
+        }
+    }
+}
+
+
+.btn-primary {
+    border: none;
+    color: whitesmoke;
+    background-color: $colorbase;
+    &:hover {
+        border:none;
+        color:grey;
+        background-color: $colorbase;
+        outline:none;
+    }
+
+}
+
+
+
+.pie {
+    list-style: none;
+}
+   
+.mision {
+    border: white 5px solid;
+    margin: 1rem .25rem;
+}
+
+.misionContenido {
+    margin:.75rem;
+}
+
+.suscripcion {
+    background-color: whitesmoke;
+    order:1;
+    border: white 5px solid;
+}
+
+.contacto {
+ background-color: whitesmoke;
+ list-style: none;
+ text-decoration:none;
+ order:3;
+ border: white 5px solid;
+    ul{        
+    text-decoration:none;
+    list-style: none;
+    font-size: smaller;
+    padding-left:10%;
+    padding-top:10%;
+        a {
+        color:grey;
+}}}
+
+.ubicacion {
+ background-color: whitesmoke;
+ order:2;
+ border: white 5px solid;
+}    
+ 
+.texto {
+    margin: 50px 150px;
+    padding: 3%;
+    background-color: $colorletras;
+    .texto__titulo {
+        color:$colorbase;
+        font-size: x-large;     
+       .texto__titulo--parrafo{
+           color:$colorhover;
+        }
+    }
+}
+
+.fotosmain {
+    .fotosmain__foto{
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:991px) {
+    .navbar-collapse {
+        margin-left: 20%;
+        .navbar-link{
+            margin-left:10%;
+            width:100%;
+            margin:1rem;
+        }
+        #dropdown{
+            margin-left:10%;
+            width:100%;
+            margin:1rem;
+            .dropdown-menu {
+                margin-left:55%;
+            }
+    
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+
+.texto {
+    margin: 25px 75px;
+    padding: 3%;
+    background-color: $colorletras;
+    .texto__titulo {
+        color:$colorbase;
+        font-size: x-large;     
+        .texto__titulo--parrafo{
+            color:$colorhover;
+        }
+    }
+}
+    
+.sr-only {
+    display:none;
+}
+
+.pie {
+    display:flex;
+    flex-direction: column;
+    width:98%;
+    margin: 5px;
+    padding: 10px;
+}  
+
+.mision {
+    margin: 1.25rem;
+    padding: 20px;
+}
+
+.misionContenido {
+    margin: 5px;
+    padding: 0px;
+}
+
+.suscripcion {
+        @include estructuramainindex(98%,10px 5px,10px)
+} 
+  
+.contacto {
+          @include estructuramainindex(98%,10px 5px,10px)
+}
+  
+.ubicacion {
+            @include estructuramainindex(98%,10px 5px,10px)
+}      
+
+.hangaraje {
+    margin: 17px 50px;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.header {
+    .header__nav{
+        .header__nav--link {
+            width:75%;
+            align-items: center;
+        }
+    }
+    .header__marca {
+        font-size: 90%;
+    }
+}
+
+}
+    
+@media only screen and (max-width:375px) {
+    
+.texto {
+    margin: 10px 20px;
+    padding: 3%;
+    background-color: $colorletras;
+    .texto__titulo {
+        color:$colorbase;
+        font-size: x-large;     
+        .texto__titulo--parrafo{
+            color:$colorhover;
+        }
+    }
+}
+        
+.pie {
+    display:flex;
+    flex-direction: column;
+    width:98%;
+    margin: 5px;
+    padding: 10px;
+}
+
+      
+.suscripcion {
+    @include estructuramainindex(98%,10px 5px,10px)
+} 
+      
+.contacto {
+    @include estructuramainindex(98%,10px 5px,10px)
+}
+      
+.ubicacion {
+    @include estructuramainindex(98%,10px 5px,10px)
+}      
+
+.header {
+    .header__nav{
+        .header__nav--link {
+            width:75%;
+            align-items: center;
+        }
+    }
+    .header__marca {
+        font-size: 90%;
+    }
+}
+
+
+}
+
+
+
+

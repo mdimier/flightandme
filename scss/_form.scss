@@ -1,0 +1,36 @@
+#formulario {
+    text-align: left;
+    margin:10px 0px;
+}
+     
+#formulario h2 {
+    margin-bottom: 5px;
+}
+   
+form fieldset {
+    padding: 5px;
+    border-radius: 5px;
+}
+     
+form fieldset div input {
+    text-align: center;
+    border-radius: 3px;
+}
+     
+form fieldset div {
+    margin: 3px;
+    padding: 1px;
+}
+     
+.buttons {
+    display:flex;  
+}
+     
+.buttons div input {
+    padding: 2px;
+}
+     
+.diarioMensual {
+    display:block;
+    align-items: center;
+}
