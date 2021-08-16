@@ -134,7 +134,15 @@ $colorhover:grey;
 
 @media only screen and (max-width:768px) {
 
-
+.fotosmain {
+    .fotosmain__foto{
+            width:100%;
+            height: 25vh;
+        }
+    }
+.d-block {
+        height: 25vh;
+    }
 .texto {
     margin: 25px 75px;
     padding: 3%;
